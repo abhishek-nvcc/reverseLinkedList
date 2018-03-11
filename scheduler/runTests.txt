@@ -1,0 +1,7 @@
+echo off
+set WORKING_DIR=%~dp0%
+set PATH=%PATH%;%WORKING_DIR%code\thirdparty\glog\binaries\Release
+set TEST_INPUT_FILE=%WORKDIR%code\modules\test\data\input.txt
+set TEST_OUTPUT_FILE=%WORKDIR%code\modules\test\data\output.txt
+set TEST_OUTPUT_SAMPLE_FILE=%WORKDIR%code\modules\test\data\outputSample.txt
+call %WORKING_DIR%code\application\Release\test.exe

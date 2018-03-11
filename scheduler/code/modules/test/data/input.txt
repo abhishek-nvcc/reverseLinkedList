@@ -1,0 +1,19 @@
+Writing Fast Tests Against Enterprise Rails,60,min
+Rails for Python Developers,1,lightning
+Overdoing it in Python,45,min
+Lua for the Masses,30,min
+Ruby Errors from Mismatched Gem Versions,45,min
+Common Ruby Errors,45,min
+Communicating Over Distance,60,min
+Accounting-Driven Development,45,min
+Woah,25,min
+Sit Down and Write,15,min
+Pair Programming vs Noise,45,min
+Rails Magic,60,min
+Ruby on Rails: Why We Should Move On,60,min
+Clojure Ate Scala (on my project),45,min
+Programming in the Boondocks of Seattle,30,min
+Ruby vs. Clojure for Back-End Development,30,min
+Ruby on Rails Legacy App Maintenance,60,min
+A World Without HackerNews,30,min
+User Interface CSS in Rails Apps,30,min
