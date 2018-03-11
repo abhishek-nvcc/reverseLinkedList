@@ -118,9 +118,8 @@ void checkBiggestSquare(const arrayOfInt& originalData, const int testVal, int& 
     }
 }
 
-void findAndDumpOutput(const arrayOfInt& matrix)
+void findAndDumpOutput(const arrayOfInt& matrix, const int testVal)
 {
-    int testVal = 1;
     int biggestSquareStartingRowNum = 0, biggestSquareStartingColNum = 0, biggestSquareSize = 0;
     checkBiggestSquare(matrix, testVal, biggestSquareStartingRowNum, biggestSquareStartingColNum, biggestSquareSize);
     
@@ -144,7 +143,9 @@ void testCase1()
     listOfInt row10 = {1,1,1,1,1,1,1,1,1,1};
     arrayOfInt matrix = {row1, row2, row3, row4, row5, row6, row7, row8, row9, row10};
     
-    findAndDumpOutput(matrix);
+    int testVal = 1;
+    
+    findAndDumpOutput(matrix, testVal);
 }
 
 void testCase2()
@@ -157,7 +158,9 @@ void testCase2()
     listOfInt row5 = {0,0,1,0,0};
     arrayOfInt matrix = {row1, row2, row3, row4, row5};
     
-    findAndDumpOutput(matrix);
+    int testVal = 1;
+    
+    findAndDumpOutput(matrix, testVal);
 }
 
 int main()
