@@ -1,0 +1,40 @@
+Algorithms
+	Search
+		Linear Search
+		Binary Search
+		Jump Search
+		Interpolation Search
+		Exponential Search
+		Ternary Search
+	Sort
+		Selection Sort
+		Bubble Sort
+		Insertion Sort
+		Merge Sort
+		Heap Sort
+		QuickSort
+		Radix Sort
+		Counting Sort
+		Bucket Sort
+		ShellSort
+		Comb Sort
+		Pigeonhole Sort
+		Cycle Sort
+	Geometry
+Design Patterns
+	Creational
+	Behavioural
+	Structural
+Design Principles
+	Single Responsibility
+	Open Closed
+	Liskov Substituion
+	Interface Segregation
+	Dependency Inversion
+Object Oriented Design
+	Encapsulation
+	Abstraction
+	Inheritance
+	Polymorphism
+Data Structures
+	
