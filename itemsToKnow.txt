@@ -36,5 +36,14 @@ Object Oriented Design
 	Abstraction
 	Inheritance
 	Polymorphism
+		Compile Time / Parametric Polymorphism / Static Binding
+			Function Overload / Ad-hoc Polymorphism
+				 Change number of arguments
+				 Change type of arguments
+			Operator Overload
+		Run Time / Subtype Polymorphism / Dynamic Binding / Dynamic Dispatch
+			Function Override
+			Coercion Polymorphism / Casting
+		Static Type
 Data Structures
 	
