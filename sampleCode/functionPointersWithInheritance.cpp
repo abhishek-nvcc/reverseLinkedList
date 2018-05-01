@@ -9,7 +9,7 @@ So, function pointers to Base class member methods cannot point to Derived class
 */
 
 /*
-Irrespective of the type of function pointer, the method corresponding to the object type gets called
+Irrespective of the type of function pointer, whether Base or Derived, the method corresponding to the inherited object type gets called
 */
 
 class Base
