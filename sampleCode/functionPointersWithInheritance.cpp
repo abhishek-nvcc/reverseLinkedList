@@ -3,6 +3,15 @@
 #include <string>
 #include <functional>
 
+/*
+Base class does not know about the functions in derived class
+So, function pointers to Base class member methods cannot point to Derived class member methods
+*/
+
+/*
+Irrespective of the type of function pointer, the method corresponding to the object type gets called
+*/
+
 class Base
 {
 public:
