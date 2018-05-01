@@ -1,5 +1,10 @@
 *******************************
 
+Closure
+
+
+*******************************
+
 Design Patterns
 	Creational
 	Behavioural
@@ -10,6 +15,7 @@ Design Principles
 	Liskov Substituion
 	Interface Segregation
 	Dependency Inversion
+Rule of 3 / Rule of 5
 	
 *******************************	
 	
