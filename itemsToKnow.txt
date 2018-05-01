@@ -16,7 +16,7 @@ Design Principles
 	Interface Segregation
 	Dependency Inversion
 Rule of 3 / Rule of 5
-	
+
 *******************************	
 	
 Object Oriented Design
@@ -35,7 +35,8 @@ Object Oriented Design
 		Static Type
 
 *******************************
-		
+
+Static Typing, Dynamic Binding
 Function Pointers
 rvalue, lvalue, glvalue, xvalue, prvalue
 Move semantics
@@ -70,5 +71,5 @@ Algorithms
 		Pigeonhole Sort
 		Cycle Sort
 	Geometry
-	
+
 *******************************
