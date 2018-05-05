@@ -45,6 +45,8 @@ STL
 Exception Handling
 Smart Pointers
 Data Structures
+Binary Search Tree
+Container classes
 
 *******************************
 

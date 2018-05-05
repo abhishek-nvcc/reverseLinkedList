@@ -1,0 +1,140 @@
+make interfaces easy to use correctly, and hard to use incorrectly
+interfaces encountered by everybody
+	gui/gesture
+	command line
+	speech
+interfaces encountered by software developers
+	library
+	module
+	class
+	method and function
+	generics and template
+interfaces users are typically smart and motivated
+	they are experienced with software
+	willing to read at least some documentation, little bit
+	they want to use your software correctly
+		no one wants to have a hard time using interfaces
+	if they use your software/interface improperly, it is your fault
+	software should be easy to use correctly and hard to use incorrectly
+		if an action is possible, it should almost always do the right thing
+		if an action is unlikely to do the right thing, it should generally be impossible
+as a software industry, we should shoot for Rico Mariani', the "pit of success"
+	if one is trying to do something, trips, and falls, he should accidentally do the right thing
+principle of least astonishment: strive to maximise the likelihood that user expectations about an interface are correctly
+	sometimes expectations are just guesses
+		your job is to maximise the odds that the guesses are correct
+	if users can do something with an interface, it should do what the expect
+		applies to both: using gui widgets, and making calls to an api
+	if users know what they want to do, they should be able to guess how to do it
+		if they can't, it should seem sensible after they have learned how
+	ui counter example
+		click on start to shut down a windows machine
+		eject cd/dvd/floppy, drag the icon to the trash icon in machine
+		installing QT on windows, it says that the install path should not contain any spaces, whereas windows allows it
+			because QT was developed in unix world, and then ported on to windows, without considering the change in the basic tenets of the platform
+		changing month in a mobile app didn't consider space availability on the device interface, or an interaction while being mobile, and simply ported from the desktop application
+	general techniques
+		avoid gratuituous incompatibilities with the surrounding environment
+			want to take advantage of things people already know, are used to
+			unless there is a compelling reason to go against what people expect, go with the flow
+		offer natural syntax
+			use the "expected" operators and function names in apis
+		offer intuitive semantics
+			in apis, when in doubt, do as the built-in or standard library types do
+			in gui, have clicks/gestures/keyboard shortcuts, mean the "usual things"
+	specific techniques
+		choose good names
+			libraries, modules, generics, namespaces
+			classes, functions, enums, typedefs
+			members, attributes, properties, methods
+			constants, objects, variables, parameters
+			messages
+			menu entries, dialog options
+			environment variables, configurations files
+			when facing a problem of gui, try to think of a solution which completely removes the problem
+			gulf of execution
+				difference between what a user wants to do and the user has to do to get it done
+		be consistent
+			in layouts, naming, expected inputs, reporting errors
+			cross platform
+				work along with muscle memory, or , involuntary actions
+			cross device
+			syntactic/lexical inconsistency
+				different ways to get same property for different container types, e.g., length/size
+				different sequence of identical parameter to different functions from the same library, e.g., file name
+			concept inconsistency
+				std::sort does not compile if it cannot run in nlogn time
+				std::binary_search runs in logn time if it can, and in linear time if it cannot
+		use progressive disclosure
+			in gui design
+			in api design
+				bundle advanced functionality into separate objects
+					functionality hidden unless such objects are requested
+					not available unless asked for
+		document before implementing
+			proven way to discover interface problem
+				unpleasant to explain <=> unpleasant to use
+				issues
+					surprising, underspecified behaviour
+					bad names
+					inconsistencies in names, conventions, layouts, etc.
+			completely consistent with TDD
+				establishing the calling interface established before writing the implementation
+		introduce new types
+			assumes the existence of static type checking
+			many errors can be prevented through stronger typing
+			"any time there is an api where there are 2 parameters adjacent to one another and are of the same type, callers could call them in the wrong order"
+			this is to be avoided if possible and practical
+				Date(int day, int month, int year)=> easy to use incorrectly
+				struct Day / struct Month / struct Year
+					Date(Day, Month, Year)=> difficult to use incorrectly
+			types versus type synonyms
+				typedef int Day / typedef int Month / typedef int Year
+					Date(Day, Month, Year), or, Date(Month, Day, Year)=> easy to use incorrectly
+				no improvement in type safety
+			unintentionally passing wrong number for the instance of the typed object
+				Month(-4)
+		constrain values
+			make Month a real class, more than just a wrapper
+			declare 12 immutable Month objects
+			limit Month object creation to copies of those values
+			class Month
+			{
+			public:
+				//define 12 immutable Month objects
+				static const Month Jan;
+				static const Month Feb;
+				...
+				static const Month Dec;
+			private:
+				//prevent creation of new Month values
+				explicit Month(int);
+				
+				//prevent creation of unint Month
+				Month();
+				
+				int m;
+			}
+			
+			after this,
+			Month(-4)=> won't compile
+			Month m = Month::Apr;=> always a valid month
+			
+			however, now its possibe to give wrong Day or Year
+			the cost incurred to make Day and Year fully safe has to take into account the associated cost incurred once used wrongly
+		avoid over reliance on string
+			naked string is a type sink
+			instead of using string in api, use something more descriptive of what they stand for
+			
+			
+summary
+make interfaces easy to use correctly, and hard to use incorrectly
+	adhere to the idea of least astonishment
+		avoid gratuituous incompatibilities with the surrounding environment
+		choose good names
+		be consistent
+	document interfaces before implementing
+	employ progressive disclosure
+	introduce new types to prevent common errors
+		consider explicitly defining all possible values for the type
+		avoid over reliance on string
