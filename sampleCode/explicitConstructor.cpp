@@ -58,5 +58,7 @@ int main()
     //1. when explicit keyword is absent from the parameterised ctor of A, and the second parameter for the ctor is optional
     //2. when explicit keyword is absent from the parameterised ctor of A, and the second parameter for the ctor is absent
     //bool bComparison = a == 25.0;
+
+    std::atexit(exiting);
     return 1;
 }

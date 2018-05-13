@@ -83,6 +83,8 @@ int main()
     C c(a);
     LOGSTR("creation of C done")
 
+    std::atexit(exiting);
+
     return 1;
 }
 

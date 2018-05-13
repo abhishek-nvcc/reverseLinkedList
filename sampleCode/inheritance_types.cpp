@@ -155,5 +155,7 @@ int main()
     delete pObj5;
     delete pObj6;
 
+    std::atexit(exiting);
+
     return 1;
 }
