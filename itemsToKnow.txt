@@ -47,6 +47,10 @@ Smart Pointers
 Data Structures
 Binary Search Tree
 Container classes
+constexpr
+explicit keyword
+public, protected, private inheritance
+noexcept
 
 *******************************
 
