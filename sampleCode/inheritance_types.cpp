@@ -91,7 +91,6 @@ public:
     };
 protected:
     void Derived_prv_prt_1() { LOG(__FILE__, __FUNCTION__, __LINE__) };
-private:
     void Derived_prv_prv_1() { LOG(__FILE__, __FUNCTION__, __LINE__) };
 };
 

@@ -15,7 +15,7 @@ static const char* t(const std::string& testStr)
 {\
     if(nullptr == pLogFile)\
     {\
-        fopen_s(&pLogFile , logFileName.c_str(), "w");\
+        pLogFile = fopen(logFileName.c_str(), "w");\
     }\
     if(nullptr != pLogFile)\
     {\
@@ -27,7 +27,7 @@ static const char* t(const std::string& testStr)
 {\
     if(nullptr == pLogFile)\
     {\
-        fopen_s(&pLogFile , logFileName.c_str(), "w");\
+        pLogFile = fopen(logFileName.c_str(), "w");\
     }\
     if(nullptr != pLogFile)\
     {\

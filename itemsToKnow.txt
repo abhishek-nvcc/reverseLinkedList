@@ -2,7 +2,6 @@
 
 Closure
 
-
 *******************************
 
 Design Patterns
@@ -37,7 +36,9 @@ Object Oriented Design
 *******************************
 
 Static Typing, Dynamic Binding
+	https://isocpp.org/wiki/faq/virtual-functions
 Function Pointers
+	https://isocpp.org/wiki/faq/pointers-to-members
 rvalue, lvalue, glvalue, xvalue, prvalue
 Move semantics
 Templates
@@ -77,5 +78,9 @@ Algorithms
 		Pigeonhole Sort
 		Cycle Sort
 	Geometry
+
+*******************************
+
+https://isocpp.org/wiki/faq/big-picture
 
 *******************************
