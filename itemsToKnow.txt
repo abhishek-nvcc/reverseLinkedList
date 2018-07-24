@@ -19,19 +19,19 @@ Rule of 3 / Rule of 5
 *******************************	
 	
 Object Oriented Design
-	Encapsulation
+	Encapsulation / Information Hiding
+		E.g., Class
 	Abstraction
 	Inheritance
 	Polymorphism
-		Compile Time / Parametric Polymorphism / Static Binding
+		Compile Time / Parametric Polymorphism / Static Binding / Static Polymorphism
 			Function Overload / Ad-hoc Polymorphism
 				 Change number of arguments
 				 Change type of arguments
 			Operator Overload
-		Run Time / Subtype Polymorphism / Dynamic Binding / Dynamic Dispatch
+		Run Time / Subtype Polymorphism / Dynamic Binding / Dynamic Dispatch / Late Binding
 			Function Override
 			Coercion Polymorphism / Casting
-		Static Type
 
 *******************************
 
