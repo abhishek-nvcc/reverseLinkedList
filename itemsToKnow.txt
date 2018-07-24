@@ -1,3 +1,60 @@
+*******************************
+
+Closure
+
+*******************************
+
+Design Patterns
+	Creational
+	Behavioural
+	Structural
+Design Principles
+	Single Responsibility
+	Open Closed
+	Liskov Substituion
+	Interface Segregation
+	Dependency Inversion
+Rule of 3 / Rule of 5
+
+*******************************	
+	
+Object Oriented Design
+	Encapsulation
+	Abstraction
+	Inheritance
+	Polymorphism
+		Compile Time / Parametric Polymorphism / Static Binding
+			Function Overload / Ad-hoc Polymorphism
+				 Change number of arguments
+				 Change type of arguments
+			Operator Overload
+		Run Time / Subtype Polymorphism / Dynamic Binding / Dynamic Dispatch
+			Function Override
+			Coercion Polymorphism / Casting
+		Static Type
+
+*******************************
+
+Static Typing, Dynamic Binding
+	https://isocpp.org/wiki/faq/virtual-functions
+Function Pointers
+	https://isocpp.org/wiki/faq/pointers-to-members
+rvalue, lvalue, glvalue, xvalue, prvalue
+Move semantics
+Templates
+STL
+Exception Handling
+Smart Pointers
+Data Structures
+Binary Search Tree
+Container classes
+constexpr
+explicit keyword
+public, protected, private inheritance
+noexcept
+
+*******************************
+
 Algorithms
 	Search
 		Linear Search
@@ -21,29 +78,9 @@ Algorithms
 		Pigeonhole Sort
 		Cycle Sort
 	Geometry
-Design Patterns
-	Creational
-	Behavioural
-	Structural
-Design Principles
-	Single Responsibility
-	Open Closed
-	Liskov Substituion
-	Interface Segregation
-	Dependency Inversion
-Object Oriented Design
-	Encapsulation
-	Abstraction
-	Inheritance
-	Polymorphism
-		Compile Time / Parametric Polymorphism / Static Binding
-			Function Overload / Ad-hoc Polymorphism
-				 Change number of arguments
-				 Change type of arguments
-			Operator Overload
-		Run Time / Subtype Polymorphism / Dynamic Binding / Dynamic Dispatch
-			Function Override
-			Coercion Polymorphism / Casting
-		Static Type
-Data Structures
-	
+
+*******************************
+
+https://isocpp.org/wiki/faq/big-picture
+
+*******************************
